@@ -1,9 +1,10 @@
+/* global properties */
 * {
     box-sizing: border-box;
 }
 
 body {
-    background: #20202D;
+    background-color: #20202D;
     margin: 0;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -13,6 +14,32 @@ body {
     max-width: 945px;
     margin: auto;
 }
+
+.section {
+    padding: 64px 0 92px 0;
+}
+
+.section-title {
+    margin: 0 0 84px 0;
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.button {
+    border-radius: 5px 5px 10px 10px;
+    background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
+    box-shadow: 0 4px 0 0 #B68500;
+    border: none;
+    padding: 24px 42px;
+    color: #2E2E30;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* her-header */
 .hero {
     padding: 50px 0 150px 0;
     background: linear-gradient(0deg, #000 0.01%, rgba(0, 0, 0, 0.00) 95.44%);
@@ -35,8 +62,12 @@ body {
     margin: 0 0 0 20px;
 }
 
+.social-link:first-child {
+    margin: 0;
+}
+
 .hero-subtitle {
-    display: inline-block;
+    display: block;
     color: #FFBB01;
     font-size: 24px;
     font-weight: 400;
@@ -51,25 +82,12 @@ body {
 }
 
 .hero-description {
-    max-width: 420px;
+    max-width: 400px;
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     margin: 0 0 40px 0;
-}
-
-.button {
-    border-radius: 5px 5px 10px 10px;
-    background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
-    box-shadow: 0 4px 0 0 #B68500;
-    border: none;
-    padding: 24px 42px;
-    color: #2E2E30;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .hero-avatar {
@@ -81,4 +99,148 @@ body {
     background-repeat: no-repeat;
     background-position: center top -40px;
     border: 14px solid #FFF;
+}
+
+/* main */
+
+/* features */
+
+.features {
+    background-color: #000;
+}
+
+.features-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features-item {
+    width: 30%;
+    margin: 0 0 64px 0;
+}
+
+.features-image {
+    display: block;
+    margin: 0 0 24px 0;
+}
+
+.features title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 0 0 16px 0;
+}
+
+.features-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+}
+
+/* form */
+
+.contacts-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-form {
+    max-width: 380px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: -5px 5px 0 0 #FFC41D;
+    padding: 40px 48px 48px 48px;
+}
+
+.form-title {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 0 0 30px 0;
+}
+
+.input {
+    border-radius: 5px;
+    border: none;
+    background: #F8F8F8;
+    box-shadow: 0 3px 10px 0 rgba(199, 199, 199, 0.25) inset;
+    padding: 18px 0 20px 50px;
+    width: 100%;
+    color: #949494;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.input-name {
+    margin: 0 0 18px 0;
+    background-image: url(../img/user-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+}
+
+.input-phone {
+    margin: 0 0 18px 0;
+    background-image: url(../img/phone-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+}
+
+.form-button {
+    width: 100%;
+}
+
+/* contacts-text */
+
+.contacts-text {
+    flex-basis: 50%;
+}
+
+.contacts-data {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 42px 0;
+}
+
+.contacts-phone,
+.contacts-mail {
+    width: 50%;
+    margin: 0 0 52px 0;
+}
+
+.contacts-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.contacts-social {
+    flex-basis: 100%;
+}
+
+.contacts-link {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 36px 0 0;
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+}
+
+.contacts-policy {
+    display: inline-block;
+    color: #A5A5A5;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    margin: 72px 0 0 0;
 }
